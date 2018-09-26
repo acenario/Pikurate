@@ -43,5 +43,7 @@ Webflow.require('ix').init([
   {"slug":"open-welcome-aboard-modal","name":"Open Welcome Aboard Modal","value":{"style":{},"triggers":[{"type":"click","selector":".welcome-aboard-modal-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"transform 200 ease 0, opacity 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
   {"slug":"open-sign-up-modal","name":"Open Sign Up Modal","value":{"style":{},"triggers":[{"type":"click","selector":".sign-up-modal-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"opacity":1,"transition":"transform 200 ease 0, opacity 200 ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
   {"slug":"close-sign-up-modal","name":"Close Sign Up Modal","value":{"style":{},"triggers":[{"type":"click","selector":".sign-up-modal-wrapper","stepsA":[{"display":"none"}],"stepsB":[]}]}},
-  {"slug":"close-welcome-aboard-modal","name":"Close Welcome Aboard Modal","value":{"style":{},"triggers":[{"type":"click","selector":".welcome-aboard-modal-wrapper","stepsA":[{"display":"none"}],"stepsB":[]}]}}
+  {"slug":"close-welcome-aboard-modal","name":"Close Welcome Aboard Modal","value":{"style":{},"triggers":[{"type":"click","selector":".welcome-aboard-modal-wrapper","stepsA":[{"display":"none"}],"stepsB":[]}]}},
+  {"slug":"navbar-background","name":"Navbar Background","value":{"style":{"opacity":0},"triggers":[]}},
+  {"slug":"page-scroll","name":"Page Scroll","value":{"style":{},"triggers":[{"type":"scroll","selector":".navbar-background","stepsA":[{"opacity":0,"transition":"opacity 200 ease 0"}],"stepsB":[{"opacity":1,"transition":"opacity 200 ease 0"}]}]}}
 ]);
