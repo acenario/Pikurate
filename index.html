@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Sep 25 2018 23:18:39 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed Sep 26 2018 17:44:43 GMT+0000 (UTC)  -->
 <html data-wf-page="5ba3d237d260821d826ca561" data-wf-site="5ba3d237d2608252586ca560">
 <head>
   <meta charset="utf-8">
@@ -42,10 +42,43 @@ clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 </style>
 </head>
 <body class="body">
+  <div class="welcome-aboard-modal-wrapper" data-ix="modal-wrapper">
+    <div class="welcome-aboard-wrapper"><img src="images/Close.svg" class="image-9" data-ix="close-welcome-aboard-modal">
+      <h1 class="heading-left"><strong class="bold-text-2">Welcome aboard!</strong></h1>
+      <div class="form-block-2 w-form">
+        <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="topic-form"><input type="text" class="text-field-2 w-input" maxlength="256" autofocus="true" name="Topic" data-name="Topic" placeholder="Type in a topic that frustrates you" id="Topic"><input type="submit" value="Share" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      <div class="columns-2 w-row">
+        <div class="column-8 w-col w-col-5">
+          <div class="text-block-4">Follow Us</div>
+        </div>
+        <div class="column-7 w-col w-col-7"><a class="w-inline-block"><img src="images/if_linkedin_834713.svg" class="social-media-icon"></a><a href="#" class="w-inline-block"><img src="images/if_facebook_circle_color_107175.svg" class="social-media-icon"></a><a href="#" class="w-inline-block"><img src="images/if_38-instagram_1161953.svg" class="social-media-icon"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="sign-up-modal-wrapper" data-ix="modal-wrapper">
+    <div class="sign-up-wrapper"><img src="images/Close.svg" class="image-8" data-ix="close-sign-up-modal">
+      <h1 class="heading-left"><strong class="bold-text-2">Join us today!</strong></h1>
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="email-form"><input type="email" class="text-field-grey w-input" maxlength="256" autofocus="true" name="Email" data-name="Email" placeholder="Your Email" id="Email-4" required=""><input type="submit" value="Get Your Invite" data-wait="Please wait..." class="submit-button w-button"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div><img src="images/Astronaut.svg" width="50" class="image-7"></div>
+  </div>
   <div class="section landing">
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
       <div class="container w-container"><a href="#" class="brand w-nav-brand"><img src="images/Logo.svg" class="image"></a>
-        <nav role="navigation" class="nav-menu w-clearfix w-nav-menu"><a href="#How-It-Works" class="nav-link w-nav-link">How it Works</a><a href="#See-It-In-Action" class="nav-link-2 w-nav-link">See it in Action</a><a href="#" class="nav-link-2 w-hidden-main w-nav-link">Sign Up</a><a href="#" class="nav-link-3 w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link"><span class="text-span">Sign Up</span></a></nav>
+        <nav role="navigation" class="nav-menu w-clearfix w-nav-menu"><a href="#How-It-Works" class="nav-link w-nav-link">How it Works</a><a href="#See-It-In-Action" class="nav-link-2 w-nav-link">See it in Action</a><a href="#" class="nav-link-2 w-hidden-main w-nav-link">Sign Up</a><a href="#" class="nav-link-3 w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link" data-ix="open-sign-up-modal"><span class="text-span">Sign Up</span></a></nav>
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
         </div>
@@ -56,8 +89,8 @@ clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
         <h1 class="heading-3"><strong class="bold-text">Don’t Experience <br>the Internet Alone</strong></h1>
         <div class="text-block"><strong>Together, we can find information <br>hidden in our online universe. </strong></div>
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Your Email" id="email" required=""><input type="submit" value="Get Your Invite" data-wait="Please wait..." class="submit-button w-button"></form>
-          <div class="w-form-done">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="email-form"><input type="email" class="text-field w-input" maxlength="256" autofocus="true" name="Email" data-name="Email" placeholder="Your Email" id="Email-5" required=""><input type="submit" value="Get Your Invite" data-wait="Please wait..." class="submit-button w-button" data-ix="open-welcome-aboard-modal"></form>
+          <div class="success-message w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
           <div class="w-form-fail">
@@ -138,8 +171,8 @@ clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
       </div>
     </div>
   </div>
-  <div class="empty-space-before-footer">
-    <div id="See-It-In-Action" class="see-it-in-action">
+  <div class="see-it-in-action">
+    <div id="See-It-In-Action" class="see-it-in-action-div">
       <h1 class="heading-center"><strong class="bold-text-2">See it in Action</strong></h1>
       <div style="padding-top:56.17021276595745%" id="w-node-20f1ea922085" class="video w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fw9BSrLoR5wo%3Ffeature%3Doembed%26rel%3D0&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dw9BSrLoR5wo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fw9BSrLoR5wo%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
     </div>
@@ -151,7 +184,7 @@ clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
       </div>
       <div class="column-6 w-col w-col-7">
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field-footer w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Your Email" id="email-2" required=""><input type="submit" value="Get Your Invite" data-wait="Please wait..." class="submit-button-footer w-button"></form>
+          <form id="email-form" name="email-form" data-name="Email Form" class="email-form"><input type="email" class="text-field-footer w-input" maxlength="256" autofocus="true" name="Email" data-name="Email" placeholder="Your Email" id="Email-6" required=""><input type="submit" value="Get Your Invite" data-wait="Please wait..." class="submit-button-footer w-button" data-ix="open-welcome-aboard-modal"></form>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
