@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="130px" viewBox="0 0 220 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-532.000000, -948.000000)">
+            <g id="Group-13" transform="translate(532.000000, 948.000000)">
+                <rect id="line-1-copy" fill="#B1CBFF" x="0" y="0" width="160" height="50" rx="2"></rect>
+                <rect id="line-2" fill="#B1CBFF" x="0" y="60" width="220" height="10" rx="2"></rect>
+                <rect id="line-2-copy" fill="#FFFFFF" x="10" y="28" width="120" height="10" rx="2"></rect>
+                <rect id="line-3" fill="#B1CBFF" x="0" y="80" width="220" height="10" rx="2"></rect>
+                <rect id="line-4" fill="#B1CBFF" x="0" y="100" width="220" height="10" rx="2"></rect>
+                <rect id="line-5" fill="#B1CBFF" x="0" y="120" width="168" height="10" rx="2"></rect>
+                <rect id="copy" fill="#BFED90" x="14" y="26" width="90" height="14" rx="2"></rect>
+                <path d="M108.499911,21.10741 L105.03642,25.277852 C104.329277,26.1293335 103.068146,26.2443568 102.219604,25.5347637 C102.126698,25.4570703 102.041005,25.3710808 101.96358,25.277852 L98.5000887,21.10741 L88,21.10741 C86.8954305,21.10741 86,20.208877 86,19.1004804 L86,2.00692968 C86,0.898533024 86.8954305,0 88,0 L119,0 C120.104569,0 121,0.898533024 121,2.00692968 L121,19.1004804 C121,20.208877 120.104569,21.10741 119,21.10741 L108.499911,21.10741 Z" id="pop-up" fill="#FA96A4"></path>
+                <rect id="copy-paste-2" stroke="#FF864C" fill="#FFFFFF" x="96.5" y="3.5" width="14" height="14" rx="2"></rect>
+                <rect id="copy-paste-1" stroke="#FF864C" fill="#FFFFFF" x="97.5" y="4.5" width="12" height="12" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
