@@ -1604,9 +1604,10 @@ textarea.w-select {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  border-top: 2px solid transparent;
 }
 .w-nav-link.w--current {
-  color: #0082f3;
+  border-top: 2px solid white;
 }
 .w-nav-menu {
   position: relative;

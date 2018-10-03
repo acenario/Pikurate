@@ -70,6 +70,10 @@
   font-weight: 600;
 }
 
+.nav-link:hover, .nav-link-2:hover {
+  color: rgba(255,255,255,0.7)
+}
+
 .nav-link-3 {
   position: static;
   display: -webkit-box;
@@ -517,7 +521,6 @@
 
 .bold-text-2 {
   display: inline;
-  margin-bottom: 0px;
   font-size: 25px;
 }
 
