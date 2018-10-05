@@ -34,16 +34,55 @@
       clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 411px) {
         .landing {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+        }
+
+        .welcome-aboard-wrapper {
+          width: 90%;
+        }
+
+        .sign-up-wrapper {
+          width: 90%;
+        }
+
+        .sign-up-wrapper #invites-form input[type="email"] {
+          margin-bottom: 20px;
+        }
+
+        .footer #invites-form input[type="email"] {
+          margin-bottom: 20px;
+        }
+
+        .section-img img {
+          width: 90% !important;
+        }
+
+        .see-it-in-action {
+          height: 70vh !important;
         }
     }
 
     @media only screen and (width: 812px) {
       .landing {
         height: 140vh !important;;
+      }
+    }
+
+    @media only screen and (max-width: 812px) {
+      .footer-nav {
+        display: flex;
+        height: 20%;
+      }
+
+      .section-img img {
+        width: 60%;
+      }
+
+      .see-it-in-action {
+        height: 100vh;
       }
     }
 
@@ -70,6 +109,7 @@
       background-color: #3f6be9 !important;
       transition: background-color 200ms linear;
     }
+
 </style>
 </head>
 
@@ -92,7 +132,17 @@
         <div class="column-8 w-col w-col-5">
           <div class="text-block-4">Follow Us</div>
         </div>
-        <div class="column-7 w-col w-col-7"><a class="w-inline-block"><img src="images/if_linkedin_834713.svg" class="social-media-icon"></a><a href="#" class="w-inline-block"><img src="images/if_facebook_circle_color_107175.svg" class="social-media-icon"></a><a href="#" class="w-inline-block"><img src="images/if_38-instagram_1161953.svg" class="social-media-icon"></a></div>
+        <div class="column-7 w-col w-col-7">
+          <a class="w-inline-block" href="https://www.linkedin.com/company/pikurate" target="_blank">
+            <img src="images/if_linkedin_834713.svg" class="social-media-icon">
+          </a>
+          <a href="https://facebook.com/pikurate" class="w-inline-block" target="_blank">
+            <img src="images/if_facebook_circle_color_107175.svg" class="social-media-icon">
+          </a>
+          <a href="https://www.instagram.com/pikurate/" class="w-inline-block" target="_blank">
+            <img src="images/if_38-instagram_1161953.svg" class="social-media-icon">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -113,7 +163,11 @@
   </div>
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
       <div class="container w-container"><a href="#" class="brand w-nav-brand"><img src="images/Logo.svg" class="image"></a>
-        <nav role="navigation" class="nav-menu w-clearfix w-nav-menu"><a href="#How-It-Works" class="nav-link w-nav-link">How it Works</a><a href="#See-It-In-Action" class="nav-link-2 w-nav-link">See it in Action</a><a href="#" class="nav-link-2 w-hidden-main w-nav-link">Sign Up</a><a href="#" class="nav-link-3 w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link" data-ix="open-sign-up-modal"><span class="text-span">Sign Up</span></a></nav>
+        <nav role="navigation" class="nav-menu w-clearfix w-nav-menu">
+          <a href="#How-It-Works" class="nav-link w-nav-link">How it Works</a>
+          <a href="#See-It-In-Action" class="nav-link-2 w-nav-link">See it in Action</a>
+          <a href="#" class="nav-link-2 w-hidden-main w-nav-link" data-ix="open-sign-up-modal">Sign Up</a>
+          <a href="#" class="nav-link-3 w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link" data-ix="open-sign-up-modal"><span class="text-span">Sign Up</span></a></nav>
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
         </div>
@@ -137,7 +191,7 @@
   </div>
   <div id="How-It-Works" class="how-it-works">
     <div class="how-it-works-div">
-      <h1 class="heading">How It Works</h1>
+      <h1 class="heading"><strong>How It Works</strong></h1>
       <div class="how-it-works-boxes w-row">
         <div class="how-it-works-box w-col w-col-4">
           <div class="div-block-2"><img src="images/copy & paste.gif" class="image-3">
@@ -179,7 +233,7 @@
           <h1 class="heading-left"><strong class="bold-text-2">Get those hours back</strong></h1>
           <div class="text-block-left">Useless browsing stops here</div>
         </div>
-        <div class="column-4 w-col w-col-5"><img src="images/Astronaut-2.svg" class="image-4"></div>
+        <div class="column-4 w-col w-col-5 section-img"><img src="images/Astronaut-2.svg" class="image-4"></div>
       </div>
     </div>
   </div>
@@ -190,7 +244,7 @@
           <h1 class="heading-right"><strong class="bold-text-2">Time to close that tab</strong></h1>
           <div class="text-block-right">Those articles, photos and videos you love now have a home</div>
         </div>
-        <div class="column-4 w-col w-col-5"><img src="images/Astronaut-3.svg" class="image-4"></div>
+        <div class="column-4 w-col w-col-5 section-img"><img src="images/Astronaut-3.svg" class="image-4"></div>
       </div>
     </div>
   </div>
@@ -198,10 +252,10 @@
     <div class="youre-not-alone-div">
       <div class="youre-not-alone-column w-row">
         <div class="column-left w-col w-col-7">
-          <h1 class="heading-right"><strong class="bold-text-2">Don&#x27;t do it alone</strong></h1>
+          <h1 class="heading-left"><strong class="bold-text-2">Searching doesn&#x27;t have to be alone.</strong></h1>
           <div class="text-block-left">Together, we can discover what we don&#x27;t know.</div>
         </div>
-        <div class="column-4 w-col w-col-5"><img src="images/Astronaut-4.svg" class="image-4"></div>
+        <div class="column-4 w-col w-col-5 section-img"><img src="images/Astronaut-4.svg" class="image-4"></div>
       </div>
     </div>
   </div>
