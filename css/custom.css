@@ -1,0 +1,116 @@
+input {
+    outline: none;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.landing {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+@media only screen and (max-width: 411px) {
+    .landing {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    }
+
+    .welcome-aboard-wrapper {
+        width: 90%;
+    }
+
+    .sign-up-wrapper {
+        width: 90%;
+    }
+
+    .sign-up-wrapper #invites-form input[type="email"] {
+        margin-bottom: 20px;
+    }
+
+    .footer #invites-form input[type="email"] {
+        margin-bottom: 20px;
+    }
+
+    .section-img img {
+        width: 90% !important;
+    }
+
+    .see-it-in-action {
+        height: 70vh !important;
+    }
+}
+
+@media only screen and (width: 812px) {
+    .landing {
+        height: 140vh !important;
+        ;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .footer-nav {
+        display: flex;
+        height: 20%;
+    }
+
+    .section-img img {
+        width: 60%;
+    }
+
+    .see-it-in-action {
+        height: 100vh;
+    }
+}
+
+.footerbg {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.thanks {
+    display: none;
+}
+
+.thanks img {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.footer input#Email {
+    background: lightgray;
+}
+
+.navbar.scrolled {
+    background-color: #3f6be9 !important;
+    transition: background-color 200ms linear;
+}
+
+#topic-form {
+    position: relative;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#topic-form input.text-field-2 {
+    height: 90%;
+    margin-bottom: 0 !important;
+}
+
+#topic-form input.submit-button {
+    top: 0;
+    height: 100%;
+    width: 30%;
+}
+
+input#share {
+    margin-bottom: 20px;
+}
