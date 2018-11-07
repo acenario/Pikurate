@@ -1,0 +1,23 @@
+.dots {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events:none;
+  opacity: 0;
+  visibility: hidden;
+
+  @media (min-width: 1366px) {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
