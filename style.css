@@ -48,6 +48,9 @@ figure {
   margin: 0 auto;
   max-width: 1020px; }
 
+input {
+  -webkit-appearance: none; }
+
 /*  Animation
 ========================================== */
 /*  Keyframes
@@ -61,7 +64,7 @@ section {
   section:before {
     content: "";
     width: 140%;
-    height: 130px;
+    height: 110px;
     background-color: #fff;
     position: absolute;
     right: -20%;
@@ -82,7 +85,7 @@ section {
   section:nth-last-of-type(2):after {
     content: "";
     width: 140%;
-    height: 130px;
+    height: 110px;
     background-color: inherit;
     position: absolute;
     bottom: 0;
@@ -104,10 +107,10 @@ section {
     section:first-of-type:after {
       content: "";
       width: 140%;
-      height: 130px;
+      height: 110px;
       background-color: inherit;
       position: absolute;
-      bottom: -130px;
+      bottom: -110px;
       left: -20%;
       z-index: 1;
       -webkit-transform: rotate(-2deg);
@@ -200,7 +203,20 @@ header {
         text-align: center; } }
 
 section.footer {
-  padding: 100px 0 50px 0; }
+  padding: 100px 0 50px 0;
+  position: relative;
+  width: 100%; }
+  section.footer .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden; }
+  section.footer .container {
+    position: relative;
+    z-index: 3; }
   @media (min-width: 1024px) {
     section.footer {
       padding-top: 200px; } }
@@ -248,7 +264,7 @@ section.footer {
         border: 0;
         padding: 14px 20px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #4a4a4a;
         line-height: 24px;
         display: block;
@@ -272,7 +288,7 @@ section.footer {
         padding: 14px 20px;
         text-align: center;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #375598;
         line-height: 24px;
         border-radius: 27px;
@@ -326,10 +342,19 @@ section.footer {
       line-height: 26px; }
 
 section#hero {
-  padding: 100px 0 100px 0; }
+  padding: 100px 0 100px 0;
+  position: relative; }
+  section#hero .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden; }
   section#hero .container {
     position: relative;
-    z-index: 3; }
+    z-index: 4; }
   @media (min-width: 768px) {
     section#hero {
       padding: 170px 0 200px 0; } }
@@ -376,7 +401,7 @@ section#hero {
       border: 0;
       padding: 14px 20px;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       color: #4a4a4a;
       line-height: 24px;
       display: block;
@@ -400,7 +425,7 @@ section#hero {
       padding: 14px 20px;
       text-align: center;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 500;
       color: #375598;
       line-height: 24px;
       border-radius: 27px;
@@ -625,7 +650,7 @@ section.steps {
 
 .complete {
   width: calc(100% - 40px);
-  max-width: 450px;
+  max-width: 490px;
   background-color: #fff;
   position: fixed;
   top: 50%;
@@ -725,7 +750,7 @@ section.steps {
       border: 0;
       padding: 14px 20px;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 400;
       color: #4a4a4a;
       line-height: 24px;
       display: block;
@@ -745,7 +770,7 @@ section.steps {
       padding: 14px 20px;
       text-align: center;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       color: #375598;
       line-height: 24px;
       border-radius: 27px;
@@ -805,7 +830,8 @@ section.steps {
   z-index: 2;
   pointer-events: none;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow: hidden; }
   @media (min-width: 1366px) {
     .dots {
       top: 0;

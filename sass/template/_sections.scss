@@ -4,7 +4,7 @@ section {
   &:before {
     content: "";
     width: 140%;
-    height: 130px;
+    height: 110px;
     background-color: #fff;
     position: absolute;
     right: -20%;
@@ -26,7 +26,7 @@ section {
     &:after {
       content: "";
       width: 140%;
-      height: 130px;
+      height: 110px;
       background-color: inherit;
       position: absolute;
       bottom: 0;
@@ -48,10 +48,10 @@ section {
     &:after {
       content: "";
       width: 140%;
-      height: 130px;
+      height: 110px;
       background-color: inherit;
       position: absolute;
-      bottom: -130px;
+      bottom: -110px;
       left: -20%;
       z-index: 1;
       @include transform(rotate(-2deg));

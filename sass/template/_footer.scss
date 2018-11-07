@@ -1,5 +1,22 @@
 section.footer {
   padding: 100px 0 50px 0;
+  position: relative;
+  width: 100%;
+
+  .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
 
   @media (min-width: 1024px) {
     padding-top: 200px;
@@ -59,7 +76,7 @@ section.footer {
         border: 0;
         padding: 14px 20px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #4a4a4a;
         line-height: 24px;
         display: block;
@@ -89,7 +106,7 @@ section.footer {
         padding: 14px 20px;
         text-align: center;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #375598;
         line-height: 24px;
         border-radius: 27px;
