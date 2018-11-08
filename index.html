@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
 
+    <meta property="og:title" content="Pikurate">
+    <meta property="og:description" content="Don’t Experience the Internet Alone. Together, we can find information hidden in our online universe.">
+    <meta property="og:image" content="http://pikurate.com/images/share.png">
+    <meta property="og:url" content="http://pikurate.com">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
@@ -36,8 +41,8 @@
             <p>Together, we can find information hidden in our online universe.</p>
             <span id="whats-pikurate"></span>
 
-            <form>
-              <input type="email" placeholder="Your Email">
+            <form class="inviteForm">
+              <input type="email" id="Email" name="email" placeholder="Your Email" required>
               <input type="submit" class="button-test" value="Get Your Invite">
             </form>
           </div>
@@ -155,8 +160,8 @@
           <div class="form" id="sign-up">
             <h1>Ready for Pikurate?</h1>
 
-            <form class="email">
-              <input type="email" placeholder="Your Email">
+            <form class="email inviteForm">
+              <input type="email" id="Email" name="email" placeholder="Your Email">
               <input type="submit" class="button-test" value="Get Your Invite">
             </form>
           </div>
@@ -167,7 +172,7 @@
 
           <p class="copyright">Copyright Pikurate, Inc. <script>document.write(new Date().getFullYear())</script> | All Rights Reserved</p>
 
-          <a class="link button-test">Contact Us</a>
+          <a class="link" href="mailto:team@pikurate.com?subject=Hey%20Pikurate!">Contact Us</a>
         </footer>
       </div>
 
@@ -179,12 +184,15 @@
         <span></span>
       </div>
 
-      <h1>Let's Collaborate!</h1>
-
-      <form class="email">
-        <input type="text" placeholder="Enter a question that frustrates you">
-        <input type="submit" value="Submit">
+      <span id="thanks"><h1>Let's Collaborate!</h1></span>
+      <form class="email inviteForm">
+        <input type="text" id="Topic" name="question" placeholder="Enter a question that frustrates you" required>
+        <input type="submit" class="button-question" value="Submit">
       </form>
+
+      
+      <div id="share">
+      </div>
 
       <div class="social">
         <h2>Follow Us</h2>
