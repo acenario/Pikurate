@@ -28,7 +28,7 @@ function sendAjaxRequest(form, tableName, success, failFunc, errorFunc, extraDat
   extraData = extraData || null;
   d = generateFormDict(form);
   var $submitform = $(form);
-  var airtable_write_endpoint = "https://api.airtable.com/v0/appxJdoN7vM9OuKvg/" + tableName + "?api_key=keyb4XCawIx98RbYN";
+  var airtable_write_endpoint = "https://api.airtable.com/v0/appxJdoN7vM9OuKvg/" + tableName + "?api_key=keyk6YBQrq3cLKhkb";
   var final_dict = {};
   if (extraData !== null) {
     for (var key in extraData) {
