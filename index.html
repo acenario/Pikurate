@@ -27,14 +27,15 @@
   <body>
     
     <div id="fb-root"></div>
-          
-      <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=256474244722734&autoLogAppEvents=1';
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+    document.getElementById('shareBtn').onclick = function() {
+      FB.ui({
+        method: 'share',
+        display: 'popup',
+        href: 'https://www.pikurate.com',
+      }, function(response){});
+    }
+    </script>
     
     <header>
       <div class="container">
@@ -213,7 +214,7 @@
       <div id="share">
       </div>
       
-      <div class="fb-share-button" data-href="https://www.pikurate.com/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pikurate.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      <div id="shareBtn" class="btn btn-success clearfix">Share</div>
 
       <div class="social">
         <h2>Follow Us</h2>
