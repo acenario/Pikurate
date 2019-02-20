@@ -52,7 +52,7 @@
 
             <form class="inviteForm">
               <input type="email" id="Email" name="email" placeholder="Your Email" required>
-              <input type="submit" class="button-test" value="Get Your Invite">
+              <input type="submit" class="button-test" value="Get Your Invite" id="submitEmailButton">
             </form>
           </div>
 
@@ -244,16 +244,18 @@
           if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
           var scr = document.createElement("script");
           var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-          scr.setAttribute(‘async’, ‘true’);
+          scr.setAttribute('async', 'true');
           scr.type = "text/javascript";
           scr.src = host + "/j/roundtrip.js";
-          ((document.getElementsByTagName(‘head’) || [null])[0] ||
-              document.getElementsByTagName(‘script’)[0].parentNode).appendChild(scr);
+          ((document.getElementsByTagName('head') || [null])[0] ||
+              document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
         };
-        if (window.addEventListener) {window.addEventListener(‘load’, _onload, false);}
-        else {window.attachEvent(‘onload’, _onload)}
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
       }());
     </script>
+	
+	<!-- Facebook Pixel Code -->
 	<script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -263,13 +265,23 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window,document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-       fbq('init', '2507241749317909'); 
+      fbq('init', '257342781859161');
       fbq('track', 'PageView');
+      fbq('track', 'Lead');
+      fbq('track', 'CompleteRegistration');
     </script>
     <noscript>
-       <img height="1" width="1" 
-      src="https://www.facebook.com/tr?id=2507241749317909&ev=PageView
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=257342781859161&ev=PageView
       &noscript=1"/>
     </noscript>
+	
+    <script>
+	  var button = document.getElementById("submitEmailButton");
+	  button.addEventListener('click', function() {
+	    fbq('track', 'Conversion');
+	  });
+    </script>
+	<!-- End Facebook Pixel Code -->
   </body>
 </html>
