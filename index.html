@@ -50,7 +50,7 @@
             <p>Together, we can find information hidden in our online universe.</p>
             <span id="whats-pikurate"></span>
 
-            <form class="inviteForm">
+            <form class="inviteForm emailSubmitting">
               <input type="email" id="Email" name="email" placeholder="Your Email" required>
               <input type="submit" class="button-test" value="Get Your Invite">
             </form>
@@ -172,8 +172,8 @@
           <div class="form" id="sign-up">
             <h1>Ready for Pikurate?</h1>
 
-            <form class="email inviteForm">
-              <input type="email" id="Email" name="email" placeholder="Your Email">
+            <form class="email inviteForm emailSubmitting">
+              <input type="email" id="Email" name="email" placeholder="Your Email" required>
               <input type="submit" class="button-test" value="Get Your Invite">
             </form>
           </div>
@@ -244,16 +244,18 @@
           if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
           var scr = document.createElement("script");
           var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-          scr.setAttribute(‘async’, ‘true’);
+          scr.setAttribute('async', 'true');
           scr.type = "text/javascript";
           scr.src = host + "/j/roundtrip.js";
-          ((document.getElementsByTagName(‘head’) || [null])[0] ||
-              document.getElementsByTagName(‘script’)[0].parentNode).appendChild(scr);
+          ((document.getElementsByTagName('head') || [null])[0] ||
+              document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
         };
-        if (window.addEventListener) {window.addEventListener(‘load’, _onload, false);}
-        else {window.attachEvent(‘onload’, _onload)}
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
       }());
     </script>
+	
+	<!-- Facebook Pixel Code -->
 	<script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -263,13 +265,41 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window,document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-       fbq('init', '2507241749317909'); 
+      fbq('init', '2507241749317909');
       fbq('track', 'PageView');
     </script>
-    <noscript>
-       <img height="1" width="1" 
+	
+	<noscript>
+      <img height="1" width="1"
       src="https://www.facebook.com/tr?id=2507241749317909&ev=PageView
       &noscript=1"/>
     </noscript>
+	
+	<script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '257342781859161');
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+      fbq('track', 'CompleteRegistration');
+    </script>
+    <noscript>
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=257342781859161&ev=PageView
+      &noscript=1"/>
+    </noscript>
+	
+    <script>
+	  var forms = document.getElementsByClassName("emailSubmitting");
+	  forms[0].addEventListener('submit', () => fbq('track', 'Conversion'));
+	  forms[1].addEventListener('submit', () => fbq('track', 'Conversion'));
+    </script>
+	<!-- End Facebook Pixel Code -->
   </body>
 </html>
