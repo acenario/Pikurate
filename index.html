@@ -52,7 +52,7 @@
 
             <form class="inviteForm">
               <input type="email" id="Email" name="email" placeholder="Your Email" required>
-              <input type="submit" class="button-test" value="Get Your Invite" id="submitEmailButton">
+              <input type="submit" class="button-test" value="Get Your Invite" id="submitEmailButton1">
             </form>
           </div>
 
@@ -174,7 +174,7 @@
 
             <form class="email inviteForm">
               <input type="email" id="Email" name="email" placeholder="Your Email">
-              <input type="submit" class="button-test" value="Get Your Invite">
+              <input type="submit" class="button-test" value="Get Your Invite"  id="submitEmailButton2">
             </form>
           </div>
         </main>
@@ -296,8 +296,13 @@
     </noscript>
 	
     <script>
-	  var button = document.getElementById("submitEmailButton");
-	  button.addEventListener('click', function() {
+	  var buttonStart = document.getElementById("submitEmailButton1");
+	  buttonStart.addEventListener('click', function() {
+	    fbq('track', 'Conversion');
+	  });
+	  
+	  var buttonEnd = document.getElementById("submitEmailButton2");
+	  buttonEnd.addEventListener('click', function() {
 	    fbq('track', 'Conversion');
 	  });
     </script>
