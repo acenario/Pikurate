@@ -50,9 +50,9 @@
             <p>Together, we can find information hidden in our online universe.</p>
             <span id="whats-pikurate"></span>
 
-            <form class="inviteForm">
+            <form class="inviteForm emailSubmitting">
               <input type="email" id="Email" name="email" placeholder="Your Email" required>
-              <input type="submit" class="button-test" value="Get Your Invite" id="submitEmailButton1">
+              <input type="submit" class="button-test" value="Get Your Invite">
             </form>
           </div>
 
@@ -172,9 +172,9 @@
           <div class="form" id="sign-up">
             <h1>Ready for Pikurate?</h1>
 
-            <form class="email inviteForm">
-              <input type="email" id="Email" name="email" placeholder="Your Email">
-              <input type="submit" class="button-test" value="Get Your Invite"  id="submitEmailButton2">
+            <form class="email inviteForm emailSubmitting">
+              <input type="email" id="Email" name="email" placeholder="Your Email" required>
+              <input type="submit" class="button-test" value="Get Your Invite">
             </form>
           </div>
         </main>
@@ -296,15 +296,9 @@
     </noscript>
 	
     <script>
-	  var buttonStart = document.getElementById("submitEmailButton1");
-	  buttonStart.addEventListener('click', function() {
-	    fbq('track', 'Conversion');
-	  });
-	  
-	  var buttonEnd = document.getElementById("submitEmailButton2");
-	  buttonEnd.addEventListener('click', function() {
-	    fbq('track', 'Conversion');
-	  });
+	  var forms = document.getElementsByClassName("emailSubmitting");
+	  forms[0].addEventListener('submit', () => fbq('track', 'Conversion'));
+	  forms[1].addEventListener('submit', () => fbq('track', 'Conversion'));
     </script>
 	<!-- End Facebook Pixel Code -->
   </body>
